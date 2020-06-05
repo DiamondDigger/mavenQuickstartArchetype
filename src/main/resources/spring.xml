@@ -7,6 +7,6 @@
     <!-- bean definitions here -->
 
 
-    <bean id="vehicle" class="org.springCrackers.Car"/>
+    <bean id="vehicle" class="org.springCrackers.Bike"/>
 
 </beans>
