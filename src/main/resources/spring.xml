@@ -8,10 +8,12 @@
            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
     <context:component-scan base-package="org.springCrackers"/>
 
-    <bean id="car" class="org.springCrackers.Car">
-<!--        <property name="brand" value="Volvo"/>-->
-        <constructor-arg name="brand" value="BMW"/>
-        <constructor-arg name="specificNumber" value="14"/>
-    </bean>
+<!--        <bean id="car" class="org.springCrackers.Car">-->
+<!--            <property name="brand" value="Volvo"/>-->
+<!--        </bean>-->
+
+<!--    <bean id="turbine" class="org.springCrackers.Turbine">-->
+<!--        <property name="boost" value="2.5 bar"/>-->
+<!--    </bean>-->
 
 </beans>

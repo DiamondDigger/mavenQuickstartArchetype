@@ -1,15 +1,21 @@
 package org.springCrackers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Car implements Vehicle{
-    private String brand;
-    private int specificNumber;
+    private String brand = "unknown sleeper";
 
-    public Car(String brand, int specificNumber) {
-        this.brand = brand;
-        this.specificNumber = specificNumber;
+    @Autowired
+    private Turbine turbine;
+
+    public Turbine getTurbine() {
+        return turbine;
+    }
+
+    public void setTurbine(Turbine turbine) {
+        this.turbine = turbine;
     }
 
     public String getBrand() {
@@ -27,9 +33,7 @@ public class Car implements Vehicle{
 
     @Override
     public String toString() {
-        return "Car{" +
-                "brand='" + brand + '\'' +
-                ", specificNumber=" + specificNumber +
+        return "Car{" + brand +": " + turbine +
                 '}';
     }
 }
