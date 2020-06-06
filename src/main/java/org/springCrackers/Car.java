@@ -5,6 +5,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class Car implements Vehicle{
     private String brand;
+    private int specificNumber;
+
+    public Car(String brand, int specificNumber) {
+        this.brand = brand;
+        this.specificNumber = specificNumber;
+    }
 
     public String getBrand() {
         return brand;
@@ -23,6 +29,7 @@ public class Car implements Vehicle{
     public String toString() {
         return "Car{" +
                 "brand='" + brand + '\'' +
+                ", specificNumber=" + specificNumber +
                 '}';
     }
 }

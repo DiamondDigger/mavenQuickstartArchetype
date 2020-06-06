@@ -9,7 +9,9 @@
     <context:component-scan base-package="org.springCrackers"/>
 
     <bean id="car" class="org.springCrackers.Car">
-        <property name="brand" value="Volvo"/>
+<!--        <property name="brand" value="Volvo"/>-->
+        <constructor-arg name="brand" value="BMW"/>
+        <constructor-arg name="specificNumber" value="14"/>
     </bean>
 
 </beans>
