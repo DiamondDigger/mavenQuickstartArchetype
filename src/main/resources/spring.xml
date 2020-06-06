@@ -8,6 +8,8 @@
            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
     <context:component-scan base-package="org.springCrackers"/>
 
-<!--    <bean id="vehicle" class="org.springCrackers.Car"/>-->
+    <bean id="car" class="org.springCrackers.Car">
+        <property name="brand" value="Volvo"/>
+    </bean>
 
 </beans>
