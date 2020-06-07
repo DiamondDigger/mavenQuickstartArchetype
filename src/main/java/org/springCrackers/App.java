@@ -16,6 +16,7 @@ public class App {
         Turbine turbine = (Turbine) context.getBean("turbine");
         turbine.setBoost("3.0 bar");
         System.out.println(turbine);
+        System.out.println("************************");
 
         Vehicle obj = (Vehicle) context.getBean("car");
         System.out.println("obj.getClass() = " + obj.getClass());
