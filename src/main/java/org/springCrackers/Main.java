@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        ApplicationContext factory = new AnnotationConfigApplicationContext("org.springCrackers");
+        ApplicationContext factory = new AnnotationConfigApplicationContext(AppConfig.class);
 
         Samsung s7 = factory.getBean(Samsung.class);
         s7.config();
